@@ -27,7 +27,7 @@ public class Food {
     @Column(nullable = false)
     private int price;
 
-    @ManyToOne
+    @ManyToOne // Order를 하기 위해서 필요하다. OrderFood랑 Food와 연관관계 맵핑을 위해서 사용
     @JoinColumn(name="restaurant_id", nullable = false)
     private Restaurant restaurant;
 }

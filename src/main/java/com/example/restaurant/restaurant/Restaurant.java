@@ -5,7 +5,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 
-@Entity
+@Entity // 직접적으로 DB에 들어가는 클래스
 @EntityListeners(AuditingEntityListener.class)
 @Getter
 @Setter

@@ -24,9 +24,9 @@ public class FoodService {
         checkRestaurant(found); // Optional<Restaurant> 활용
         Restaurant restaurant = found.get();
 
-        for (FoodRequestDto requestDto : requestDtoList){
-            String foodName = requestDto.getName();
-            int price = requestDto.getPrice();
+        for (FoodRequestDto foodRequestDto : requestDtoList){
+            String foodName = foodRequestDto.getName();
+            int price = foodRequestDto.getPrice();
 
             //1. 음식점 내에 음식 이름 중복
             checkOverlapFood(restaurant, foodName);
